@@ -22,4 +22,4 @@
 ## 五、免责声明：
 * 本代码仅供学习、娱乐使用，严禁商业用途
 * 本代码若有侵犯权限之处，请联系作者删除该代码
-* 本代码参考https://github.com/leiqiang75/luckking
+* 本代码参考：①https://github.com/leiqiang75/luckking 感谢原著的代码分享

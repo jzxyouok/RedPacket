@@ -7,12 +7,12 @@
 >   c、开启AliPay红包服务，可自动抢咻红包，但是不能自动打开
 
 ## 二、APK运行效果图：
-    - 见项目中screenshort目录下
-    -
+- 见项目中screenshort目录下
 
 ## 三、使用介绍：
-    - ①app 使用只需打开QQ、WeChat、AliPay服务即可
-    - ②代码 使用请参考代码注释
+-   ①app使用只需打开QQ、WeChat、AliPay服务即可
+
+-   ②代码使用请参考代码注释
 
 ## 四、作者介绍：
 * Author：阿军

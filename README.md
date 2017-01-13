@@ -18,6 +18,8 @@
 * Author：阿军
 * Date： 2017/1/9
 * E-Mail： mr.ajun@foxmail.com
+* GitHub：https://github.com/LittleRedArmy/RedPacket
+* Blog：http://blog.csdn.net/hshengjun/article/details/54408704
 
 ## 五、免责声明：
 * 本代码仅供学习、娱乐使用，严禁商业用途

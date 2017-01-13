@@ -18,11 +18,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @Company: 南京荣之誉信息科技有限公司
+ * @Company: ****科技有限公司
  * @Class: QQService
  * @Description:
  * @Author: HSJ
- * @Version: XBS V2.0
+ * @Version:
  * @Date: 2017/1/10 19:06
  * @E-mail: mr.ajun@foxmail.com
  */
@@ -53,18 +53,6 @@ public class QQService extends AccessibilityService {
     public void onCreate() {
         super.onCreate();
 
-//        Intent notificationIntent = new Intent(this, MainActivity.class);
-//
-//        PendingIntent pendingIntent = getActivity(this, 0, notificationIntent, 0);
-//
-//        Notification notification = new Notification(R.mipmap.ic_launcher, getResources().getString(R.string.fore_qq_tips), System.currentTimeMillis());
-//
-//        notification.setLatestEventInfo(this, getResources().getString(R.string.fore_qq_title), getResources().getString(R.string.fore_qq_contents), pendingIntent);
-
-        // 1. 注册为前台服务，常驻内存
-//        startForeground(1, notification);
-
-        /***高版本**/
         Notification.Builder builder = new Notification.Builder(this.getApplicationContext());
 
         Intent nfIntent = new Intent(this, MainActivity.class);

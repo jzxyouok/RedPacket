@@ -12,7 +12,7 @@ import com.jun.redpacket.R;
  * @Class: HomeFragment
  * @Description:
  * @Author: HSJ
- * @Version: RedPacket V1.0
+ * @Version:
  * @Date: 2017/1/10 18:29
  * @E-mail: mr.ajun@foxmail.com
  */

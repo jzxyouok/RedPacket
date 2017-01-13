@@ -15,7 +15,7 @@ import java.util.List;
  * @Class: MainActivity
  * @Description:
  * @Author: HSJ
- * @Version: RedPacket V1.0
+ * @Version:
  * @Date: 2017/1/9 11:35
  * @E-mail: mr.ajun@foxmail.com
  */

@@ -48,18 +48,6 @@ public class WeChatService extends AccessibilityService {
     public void onCreate() {
         super.onCreate();
 
-//        Intent notificationIntent = new Intent(this, MainActivity.class);
-//
-//        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
-//
-//        Notification notification = new Notification(R.mipmap.ic_launcher,getResources().getString(R.string.fore_wechat_tips),System.currentTimeMillis());
-//
-//        notification.setLatestEventInfo(this,getResources().getString(R.string.fore_wechat_title), getResources().getString(R.string.fore_wechat_contents), pendingIntent);
-//
-//        // 1. 注册为前台服务，常驻内存
-//        startForeground(1, notification);
-
-        /***高版本**/
         Notification.Builder builder = new Notification.Builder(this.getApplicationContext());
 
         Intent nfIntent = new Intent(this, MainActivity.class);

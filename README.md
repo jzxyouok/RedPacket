@@ -18,10 +18,27 @@
 * Author：阿军
 * Date： 2017/1/9
 * E-Mail： mr.ajun@foxmail.com
-* GitHub：https://github.com/LittleRedArmy/RedPacket
-* Blog：http://blog.csdn.net/hshengjun/article/details/54408704
+* GitHub：[GitHub](https://github.com/LittleRedArmy/RedPacket)
+* Blog：[CSDN](http://blog.csdn.net/hshengjun/article/details/54408704)
 
 ## 五、免责声明：
 * 本代码仅供学习、娱乐使用，严禁商业用途
 * 本代码若有侵犯权限之处，请联系作者删除该代码
-* 本代码参考：①https://github.com/leiqiang75/luckking 感谢原著的代码分享
+* 本代码参考：[原作者：Lucking](https://github.com/leiqiang75/luckking) 感谢原著的代码分享
+
+## License
+```text
+Copyright 2017 HSJ
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```

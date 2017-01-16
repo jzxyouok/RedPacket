@@ -1,0 +1,8 @@
+<resources>
+    <!-- 适配英文 -->
+    <string name="app_name">PacketHelper</string>
+
+    <string name="main_rb1_text">Home</string>
+    <string name="main_rb5_text">Mine</string>
+
+</resources>

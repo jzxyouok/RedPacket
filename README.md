@@ -10,9 +10,9 @@
 - 见项目中screenShort目录下
 
 ## 三、使用介绍：
-- ①app使用：只需打开QQ、WeChat、AliPay服务即可
+- ①demo使用：只需打开QQ、WeChat、AliPay服务即可
 - ②代码使用：请参考代码注释
-- ③代码混淆：常规混淆即可
+- ③代码混淆：见proguard-rules.pro混淆文件（常规混淆即可）
 
 ## 四、作者介绍：
 * Author：阿军

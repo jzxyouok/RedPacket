@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
+
 import com.jun.redpacket.R;
 import com.jun.redpacket.base.BaseInfo;
+import com.jun.redpacket.view.SwitchButton;
 
 /**
  * @Company: ****科技有限公司
@@ -20,27 +22,37 @@ import com.jun.redpacket.base.BaseInfo;
  * @Date: 2017/1/10 18:29
  * @E-mail: mr.ajun@foxmail.com
  */
-public class MeFragment extends Fragment implements View.OnClickListener {
+public class MeFragment extends Fragment implements SwitchButton.OnCheckedChangeListener{
 
     private final String TAG = "MeFragment";
     protected View view;
-    private Button qq;       //开启qq红包按钮
-    private Button weChat;   //开启微信红包按钮
-    private Button aliPay;   //开启支付宝红包按钮
-    private Button autoBack; //抢到红包自动返回按钮
+    private SwitchButton qq;    //开启qq红包按钮
+    private SwitchButton weChat;//开启微信红包按钮
+    private SwitchButton aliPay;//开启支付宝红包按钮
+    private SwitchButton autoBack;//抢到红包自动返回按钮
+    private TextView tv_qq;
+    private TextView tv_weChat;
+    private TextView tv_aliPay;
+    private TextView tv_back;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         if (view == null) {
             view = inflater.inflate(R.layout.fragment_me, null);
-            qq = (Button) view.findViewById(R.id.btn_qq);
-            weChat = (Button) view.findViewById(R.id.btn_weChat);
-            aliPay = (Button) view.findViewById(R.id.btn_aliPay);
-            autoBack = (Button) view.findViewById(R.id.btn_auto_back);
-            qq.setOnClickListener(this);
-            weChat.setOnClickListener(this);
-            aliPay.setOnClickListener(this);
-            autoBack.setOnClickListener(this);
+
+            tv_qq = (TextView) view.findViewById(R.id.tv_qq);
+            tv_weChat = (TextView) view.findViewById(R.id.tv_weChat);
+            tv_aliPay = (TextView) view.findViewById(R.id.tv_aliPay);
+            tv_back = (TextView) view.findViewById(R.id.tv_auto_back);
+            qq = (SwitchButton) view.findViewById(R.id.sb_qq);
+            weChat = (SwitchButton) view.findViewById(R.id.sb_weChat);
+            aliPay = (SwitchButton) view.findViewById(R.id.sb_aliPay);
+            autoBack = (SwitchButton) view.findViewById(R.id.sb_auto_back);
+            qq.setOnCheckedChangeListener(this);
+            weChat.setOnCheckedChangeListener(this);
+            aliPay.setOnCheckedChangeListener(this);
+            autoBack.setOnCheckedChangeListener(this);
+
         }
         return view;
     }
@@ -52,26 +64,23 @@ public class MeFragment extends Fragment implements View.OnClickListener {
     }
 
     @Override
-    public void onClick(View view) {
+    public void onCheckedChanged(SwitchButton view, boolean isChecked) {
         switch (view.getId()) {
-            case R.id.btn_qq:
-            case R.id.btn_weChat:
-            case R.id.btn_aliPay:
-
+            case R.id.sb_qq:
+            case R.id.sb_weChat:
+            case R.id.sb_aliPay:
                 Intent intent = new Intent(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS);
-
                 startActivity(intent);
-
                 Toast.makeText(getActivity(), "请开启红包服务", Toast.LENGTH_LONG).show();
                 break;
-            case R.id.btn_auto_back:
-                String title = autoBack.getText().toString();
+            case R.id.sb_auto_back:
+                String title = tv_back.getText().toString();
                 if (getResources().getString(R.string.btn_auto_back_start).equalsIgnoreCase(title)) {
                     BaseInfo.autoBackFlag = true;
-                    autoBack.setText(R.string.btn_auto_back_close);
+                    tv_back.setText(R.string.btn_auto_back_close);
                 } else {
                     BaseInfo.autoBackFlag = false;
-                    autoBack.setText(R.string.btn_auto_back_start);
+                    tv_back.setText(R.string.btn_auto_back_start);
                 }
                 break;
             default:
@@ -84,27 +93,27 @@ public class MeFragment extends Fragment implements View.OnClickListener {
      */
     private void initButtonState() {
         if (BaseInfo.qqAsHasOpened) {
-            qq.setText(R.string.btn_qq_assist_close);
+            tv_qq.setText(R.string.btn_qq_assist_close);
         } else {
-            qq.setText(R.string.btn_qq_assist_start);
+            tv_qq.setText(R.string.btn_qq_assist_start);
         }
 
         if (BaseInfo.wechatAsHasOpened) {
-            weChat.setText(R.string.btn_wechat_assist_close);
+            tv_weChat.setText(R.string.btn_wechat_assist_close);
         } else {
-            weChat.setText(R.string.btn_wechat_assist_start);
+            tv_weChat.setText(R.string.btn_wechat_assist_start);
         }
 
         if (BaseInfo.xiuAsHasOpened) {
-            aliPay.setText(R.string.btn_alipay_xiu_assist_close);
+            tv_aliPay.setText(R.string.btn_alipay_xiu_assist_close);
         } else {
-            aliPay.setText(R.string.btn_alipay_xiu_assist_start);
+            tv_aliPay.setText(R.string.btn_alipay_xiu_assist_start);
         }
 
         if (BaseInfo.autoBackFlag) {
-            autoBack.setText(R.string.btn_auto_back_close);
+            tv_back.setText(R.string.btn_auto_back_close);
         } else {
-            autoBack.setText(R.string.btn_auto_back_start);
+            tv_back.setText(R.string.btn_auto_back_start);
         }
     }
 

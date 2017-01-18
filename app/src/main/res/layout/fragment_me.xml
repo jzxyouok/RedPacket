@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/app_icon" />
 
     <RelativeLayout
+        android:id="@+id/rl_1"
         android:layout_width="match_parent"
-        android:layout_height="36dp">
+        android:layout_height="36dp"
+        android:layout_below="@id/iv_icon"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp">
 
         <TextView
             android:id="@+id/tv_qq"
@@ -29,8 +39,12 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/rl_2"
         android:layout_width="match_parent"
-        android:layout_height="36dp">
+        android:layout_height="36dp"
+        android:layout_below="@id/rl_1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
 
         <TextView
             android:id="@+id/tv_weChat"
@@ -46,12 +60,16 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            app:sb_checked="false"/>
+            app:sb_checked="false" />
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/rl_3"
         android:layout_width="match_parent"
-        android:layout_height="36dp">
+        android:layout_height="36dp"
+        android:layout_below="@id/rl_2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
 
         <TextView
             android:id="@+id/tv_aliPay"
@@ -67,12 +85,16 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            app:sb_checked="false"/>
+            app:sb_checked="false" />
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/rl_4"
         android:layout_width="match_parent"
-        android:layout_height="36dp">
+        android:layout_height="36dp"
+        android:layout_below="@id/rl_3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
 
         <TextView
             android:id="@+id/tv_auto_back"
@@ -88,7 +110,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            app:sb_checked="false"/>
+            app:sb_checked="false" />
     </RelativeLayout>
 
-</LinearLayout>
+</RelativeLayout>

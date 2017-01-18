@@ -18,7 +18,7 @@
             android:layout_centerVertical="true"
             android:text="开启QQ红包服务" />
 
-        <com.jun.redpacket.view.SwitchButton
+        <com.hsj.redpacket.view.SwitchButton
             android:id="@+id/sb_qq"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
             android:layout_centerVertical="true"
             android:text="开启微信红包服务" />
 
-        <com.jun.redpacket.view.SwitchButton
+        <com.hsj.redpacket.view.SwitchButton
             android:id="@+id/sb_weChat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
             android:layout_centerVertical="true"
             android:text="开启支付宝红包服务" />
 
-        <com.jun.redpacket.view.SwitchButton
+        <com.hsj.redpacket.view.SwitchButton
             android:id="@+id/sb_aliPay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
             android:layout_centerVertical="true"
             android:text="开启抢到红包自动返回功能" />
 
-        <com.jun.redpacket.view.SwitchButton
+        <com.hsj.redpacket.view.SwitchButton
             android:id="@+id/sb_auto_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

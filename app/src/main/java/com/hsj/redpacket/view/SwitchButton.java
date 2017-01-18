@@ -1,4 +1,4 @@
-package com.jun.redpacket.view;
+package com.hsj.redpacket.view;
 
 import android.animation.Animator;
 import android.animation.ValueAnimator;
@@ -17,7 +17,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Checkable;
 
-import com.jun.redpacket.R;
+import com.hsj.redpacket.R;
 
 /**
  * @Company: *****科技有限公司

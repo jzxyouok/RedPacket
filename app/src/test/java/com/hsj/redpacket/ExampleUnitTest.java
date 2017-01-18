@@ -1,4 +1,4 @@
-package com.jun.redpacket;
+package com.hsj.redpacket;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.jun.redpacket.base;
+package com.hsj.redpacket.base;
 
 /**
  * @Company: ****科技有限公司

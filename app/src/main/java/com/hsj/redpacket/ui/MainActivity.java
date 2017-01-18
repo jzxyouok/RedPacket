@@ -1,4 +1,4 @@
-package com.jun.redpacket.ui;
+package com.hsj.redpacket.ui;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import com.jun.redpacket.R;
+import com.hsj.redpacket.R;
 import java.util.ArrayList;
 import java.util.List;
 

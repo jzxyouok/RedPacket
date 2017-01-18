@@ -1,4 +1,4 @@
-package com.jun.redpacket.ui;
+package com.hsj.redpacket.ui;
 
 import android.app.Fragment;
 import android.content.Intent;
@@ -9,9 +9,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.jun.redpacket.R;
-import com.jun.redpacket.base.BaseInfo;
-import com.jun.redpacket.view.SwitchButton;
+import com.hsj.redpacket.base.BaseInfo;
+import com.hsj.redpacket.view.SwitchButton;
+import com.hsj.redpacket.R;
 
 /**
  * @Company: ****科技有限公司
@@ -22,7 +22,7 @@ import com.jun.redpacket.view.SwitchButton;
  * @Date: 2017/1/10 18:29
  * @E-mail: mr.ajun@foxmail.com
  */
-public class MeFragment extends Fragment implements SwitchButton.OnCheckedChangeListener{
+public class MeFragment extends Fragment implements SwitchButton.OnCheckedChangeListener {
 
     private final String TAG = "MeFragment";
     protected View view;

@@ -1,4 +1,4 @@
-package com.jun.redpacket.service;
+package com.hsj.redpacket.service;
 
 import android.accessibilityservice.AccessibilityService;
 import android.annotation.TargetApi;
@@ -10,10 +10,11 @@ import android.os.Build;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.Toast;
-import com.jun.redpacket.R;
-import com.jun.redpacket.base.BaseInfo;
-import com.jun.redpacket.base.StateEnum;
-import com.jun.redpacket.ui.MainActivity;
+
+import com.hsj.redpacket.base.StateEnum;
+import com.hsj.redpacket.R;
+import com.hsj.redpacket.base.BaseInfo;
+import com.hsj.redpacket.ui.MainActivity;
 import java.util.LinkedList;
 import java.util.List;
 

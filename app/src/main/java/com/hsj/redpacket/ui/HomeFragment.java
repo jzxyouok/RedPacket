@@ -1,11 +1,11 @@
-package com.jun.redpacket.ui;
+package com.hsj.redpacket.ui;
 
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.jun.redpacket.R;
+import com.hsj.redpacket.R;
 
 /**
  * @Company: ****科技有限公司
